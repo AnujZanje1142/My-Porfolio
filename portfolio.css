@@ -1,0 +1,1658 @@
+
+   @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    /* font-family: 'Gowun Dodum', sans-serif; */
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    
+}
+
+
+
+
+/* -------------------------------.main-page---------- */
+#contener {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+
+}
+
+#screenONE {
+    width: 400px;
+    height: auto;
+    background-color: black;
+    padding: 100px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+      
+}
+
+#screenTWO {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:720px) {
+
+    #screenONE {
+        display: none;
+    }
+    #screenTWO{
+        width: 98vw;
+    }
+
+}
+
+.profilebox {
+    width: 98%;
+    height: 200px;
+    background-image: url("img/black-black-and-white-night-street-light-wallpaper-thumb.jpg");
+    background-position: 1%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    gap: 39px;
+
+}
+
+.myimg {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 520px;
+    margin-left: 20px;
+    overflow: hidden;
+    background-image:url("img/Screenshot\ 2024-03-12\ 202125.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 4px solid white;
+}
+
+.myname {
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+    font-family: monospace;
+
+}
+
+.myemail  {
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* -----------------------------project------------------- */
+
+.tagname {
+    color: rgb(255, 255, 255);
+    width: 96%;
+    font-size: 25px;
+    margin-top: 200px;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+.project,
+.clone {
+    width: 100%;
+    margin-top: 20px;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projectbox {
+    width: 300px;
+    height: 450px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+  
+   
+}
+
+.projectimgbox {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.projectimg{
+    width: 95%;
+    height: 95%;
+    /* background-image: url(/pixel.avif); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 1%;
+    /* background-color: aquamarine; */
+    border-radius: 10px;
+    box-shadow: 2px 10px 10px gray;
+    justify-content: center;
+    display: flex;
+    transition: transform .2s;
+    
+}
+#pixelproject{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv_Aa5XMqMzJOLk3I1ufW-v1KSBsyunGc20pIUuwSkwA&s);
+}
+#faceproject{
+    background-image: url(https://assets-global.website-files.com/63f902d79a33f7ff016cde0b/63f902d89a33f71c826ce746_6390a10c3644738a41e9b528_Face-Recognition.jpeg); 
+}
+#cutmbolproject {
+    background-image: linear-gradient( transparent 0, transparent 50%, #2d8bde 100% ,white), url(https://miro.medium.com/v2/resize:fit:1018/1*iAu65xDmvpVdBJgps6EDEw.png);
+}
+#Library{
+    background-image: url(https://biyanitechnologies.com/img/library%20management%20system.jpg); 
+}
+#Quiz{
+    background-image: url(img/Screenshot\ 2024-03-18\ 160412.png); 
+}
+
+.projectimg p{
+    margin-top: 20px;
+    color: rgba(169, 210, 245, 0.684);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.projectabout {
+width: 100%;
+height: 30%;
+display: flex;
+flex-direction: column;
+justify-content:center;
+padding: 10px 0px;
+align-items: center;
+gap: 10px;
+
+
+}
+.projectnamebox, 
+.projectskillbox,
+.projectstextbox
+{
+    width:100%;
+    padding-left: 20px;
+    /* background-color: aqua; */
+    display: flex;
+    gap: 10px;
+}
+.projectsbtnbox
+{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding: 5px 0px;
+     /* background-color: aqua; */
+    gap: 5px;
+
+}
+
+
+.projectname {
+    font-size: 20px;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+
+}
+.projectskill{
+    /* background-color: rgba(128, 128, 128, 0.349); */
+    display: flex;
+    color: black;
+    font-size: 12px;
+    padding: 7px 10px;
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+.projecttext{
+    font-size: 13px;
+    color: gray;
+    padding: 10px;
+}
+.projectgitbtn{
+    width: 10%;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(128, 128, 128, 0.308);
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+   
+}
+.projectlive{
+    width: 75%;
+    background-color: rgb(44, 208, 98);
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+    font-family: 'Gowun Dodum', sans-serif;
+    color: white;
+    text-align: center;
+
+}
+
+/* ---------------------------------project hover--------- */
+
+.projectimgbox::before {
+    content: "I am Anuj Zanje, where passion meets code. I'm Anuj, a curious explorer in the realm of technology. Join me on this journey of crafting digital solutions and unraveling the wonders of IT. Let's dive into the world of code together ! ";
+    position: absolute;
+    color: white;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(175, 149, 58);
+    transform: translateY(-100%);
+    transition: all .7s;
+    z-index: 10;
+   }
+   .projectimgbox:hover::before {
+    transform: translateY(0%);
+   }
+
+
+
+
+
+
+
+
+.projectlive:hover{
+    color: black;
+}
+.projectskill:hover{
+    /* color: white; */
+    background-color:rgba(44, 208, 98) ;
+    border: 1px solid rgb(44, 208, 98);
+}
+.projectgitbtn:hover{
+ background-color: black;
+ color: white;
+}
+.projectimg:hover{
+    transform: scale(1.1);
+}
+
+
+@media (max-width:619px) {
+
+    .projectbox {
+        width: 80%;
+        height: 500px;
+    }
+
+    .myimg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profilebox {
+        margin-top: 60px;
+    }
+
+    .myname {
+        font-size: 20px;
+    }
+
+}
+
+
+/*---------------------- clone--------------------------------- */
+
+
+/* --------------skilss----------------- */
+.skills {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.skilbox {
+    width: 90%;
+    height: 500px;
+    border-radius: 40px;
+    position: sticky;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+#webskil {
+    background-color: rgb(207, 187, 255);
+    top: 130px;
+  
+}
+
+#js {
+    background-color: rgb(235, 214, 62);
+    top: 150px;
+}
+
+#java {
+    background-color: rgb(219, 227, 249);
+    top: 170px;
+}
+
+
+#android {
+    background-color: rgb(55, 218, 114);
+    top: 190px;
+}
+
+.leftskill {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 50px;
+}
+
+.rightskill {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skillname {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+
+   
+    
+}
+
+.skilltext {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    width: 80%;
+    margin-top: 15px;
+}
+
+
+
+
+
+@media (max-width:940px) {
+
+    .skilbox {
+        width: 90%;
+        height: 550px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .skillname {
+        font-size: 20px;
+       
+    }
+
+    #webskil {
+        top: 90px;
+    }
+
+    .skilltext {
+        width: 100%;
+      
+    }
+    
+}
+
+@media (max-width:619px) {
+
+
+
+
+    #webskil img{
+        width: 100%;
+    }
+
+    #js img{
+        width: 200%; 
+    }
+    #java img{
+        width: 100%; 
+    }
+
+
+    #js{
+        top: 130px;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+
+
+#navbar {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    
+}
+.navlogo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    padding-left: 30px;
+}
+code{
+    color: white;
+    font-family: 'Gowun Dodum', sans-serif;
+    font-size: 22px;
+}
+
+
+
+#contact_me {
+    color: white;
+    width: 130px;
+    height: 35px;
+    background-color: rgb(44, 208, 98);
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gowun Dodum', sans-serif;
+    border-radius: 8px;
+    gap: 6px;
+}
+
+#contact_me a {
+    color: rgb(255, 255, 255);
+}
+
+#menuBTN {
+    color: rgb(255, 255, 255);
+    margin: 0px 15px;
+    font-size: 25px;
+    display: none;
+}
+
+
+
+
+
+@media (max-width:1000px) {
+
+    #menuBTN {
+        display: flex;
+    }
+    .navlogo{
+        display: none;  
+    }
+
+
+}
+
+
+
+/* foooter */
+.footerbox {
+    width: 90%;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    margin: 100px 0px 20px;
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:st;
+    z-index: 10;
+}
+
+.work {
+    width: 100%;
+    height: 65%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.worktagline {
+    font-size: 23px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px 0px;
+    font-weight: 900;
+    color: black;
+    background-color: greenyellow;
+}
+
+.workadd {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.leftwork {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.rightwork {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+}
+
+.worktext {
+    width: 80%;
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.hireme {
+
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    color: white;
+    border: 3px solid greenyellow;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.hireme::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(172, 255, 47);
+    transform: translateX(-100%);
+    transition: all .7s;
+    z-index: -1;
+   }
+
+   .hireme:hover::before {
+    transform: translateX(55%);
+   }
+.hireme a {
+    color: black;
+}
+
+
+
+@media (max-width:940px) {
+    .workadd {
+        flex-direction: column;
+    }
+
+    .worktext {
+        width: 100%;
+        font-size: 12px
+    }
+
+    .footerbox {
+        height: 1000px;
+        
+    }
+
+    .rightwork {
+        display: flex;
+        justify-content: start;
+    }
+}
+
+
+/* ---------footer----------- */
+
+.footer {
+    width: 135%;
+    height: 35%;
+    background-color: grey;
+    margin-right: 10px;
+    display:flex;
+    justify-content:baseline;
+   
+}
+
+.address {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: left;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.about {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.addresslink {
+    width: 30%;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    gap: 20px;
+
+}
+
+
+.addresslink i {
+    color: greenyellow;
+}
+
+.aboutbox {
+    width: 100px;
+    height: 50px;
+    border: 2px solid greenyellow;
+    font-weight: bold;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.aboutbox::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: greenyellow;
+    transform: translateX(-100%);
+    transition: all .9s;
+    z-index: -1;
+}
+
+.aboutbox:hover::before {
+ transform: translateX(55%);
+}
+
+
+
+.aboutbox a{
+    color: rgb(0, 0, 0); 
+}
+
+.abouttext {
+    width: 70%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+
+
+
+@media (max-width:940px) and (min-width:600px) {
+    .footer {
+        flex-direction: column;
+        height: 500px;
+        width: 550px;
+        
+
+    }
+
+    .abouttext {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .about {
+        width: 90%;
+        justify-content:center;
+        align-items: center;
+        padding: 0px 10px;
+
+    }
+
+    .aboutbox {
+
+        width: 20px;
+        height: 40px;
+    }
+
+    .addresslink {
+        font-size: 15px;
+        width: 80px;
+        margin-right: 90%;
+       
+    }
+     
+    
+
+
+}
+
+
+
+
+
+
+/* ----------pc menu bar----------------------------------------------------------------- */
+
+
+#menuLIST {
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction:column;
+    position:fixed;
+    background-color: rgb(22, 21, 26);
+}
+
+.aboutLIST {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    padding: 55px 0px;
+    overflow: hidden;
+}
+
+.item {
+
+    width: 50%;
+    height: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 19px;
+    gap: 30px;
+    font-family: 'Gowun Dodum', sans-serif;
+
+}
+
+.item i {
+    font-size: 27px;
+
+}
+
+.item,
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+@media (max-width:1000px) {
+
+    #menuLIST {
+        display: none;
+    }
+
+}
+
+.item:hover {
+    color: white;
+
+    a {
+        color: white;
+    }
+
+}
+
+
+
+
+
+/* -------------------------social midia list------------- -- */
+.socialLIST {
+
+    width: 100%;
+    height: 100%;
+    display:flexbox;
+    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content:right;
+    padding: 25px 0px;
+    overflow: hidden;
+}
+
+.socialmedia {
+
+    width: 50%;
+    display:contents;
+    justify-content: start;
+    align-items: center;
+    font-size: 19px;
+    gap: 23px;
+    font-family: 'Gowun Dodum', sans-serif;
+
+
+
+}
+
+#tag {
+    color: gray;
+    width: 100%;
+    height: 35px;
+    font-size: 23px;
+    padding-left: 40px;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+#insta i {
+    font-size: 27px;
+    color: pink;
+
+}
+
+#youtube i {
+    font-size: 27px;
+    color: rgba(255, 0, 0, 0.983);
+}
+
+#github i {
+    font-size: 27px;
+    color: aqua;
+}
+
+#twitter i {
+    font-size: 27px;
+    color: skyblue;
+}
+
+#linkedin i {
+    font-size: 27px;
+    color: blue;
+}
+
+
+/* hover------- */
+#insta a:hover {
+    color: pink;
+
+}
+
+#youtube a:hover {
+    color: red;
+}
+
+#github a:hover {
+
+    color: aqua;
+}
+
+#linkedin a:hover {
+
+    color: blue;
+}
+
+#twitter a:hover {
+    color: skyblue;
+}
+#Mobileview{
+   display: none;
+   width: 60%;
+   height: 40%;
+   position: right;
+   margin-left: 180px;
+   background-color: rgb(5, 7, 29);
+   border: 5px solid rgb(67, 67, 67);
+   border-radius: 5%;
+   text-align: center;
+   padding: 10px;
+   box-shadow: inset -1px -1px 10px rgba(255,255,255,.5),
+               1px 1px 20px rgba(255,255,255,.5) ;
+
+  
+}
+#mobileviewlist{
+   width: 100%;
+   height: 50%;
+   list-style-type: none;
+   font-size: large;
+   overflow: hidden;
+   transition: .3s linear;
+
+
+}
+#backbtn{
+   color: white;
+   font-size: 30px;
+   position:absolute;
+   top: 20px;
+    right: 20px;
+    
+}
+/* -----------------------------About------------------- */
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+.Me{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: justify;
+   margin-left: 40px;
+    font-style: normal;
+    margin-right:50%;
+    margin-top: 100px;
+    font-display:unset;
+    
+    
+
+}
+ /* The typing effect */
+ @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+.avatar{
+    border-radius: 50%;
+    margin-left: 5%;
+    margin-top: -400%;
+    animation: rotate 3s 3ms 2s 1s cubic-bezier(0.215, 0.610, 0.355, 1) cubic-bezier(0.895, 0.03, 0.685, 0.22);
+    z-index: 999;
+}
+@media only screen and (max-width: 768px){
+    .Me{
+        font-size: 15px;
+        line-height: 1.5em;
+    }
+    .avatar{
+       display:flexinline-block;
+       float: none;
+       margin-left: 150px;
+       margin-right:20px;
+    
+                
+     }
+     #backbtn{
+         right: 10px;
+     }
+}
+@media only screen and (min-width:420px ) and ( max-device-width : 768px) and (-webkit-min-device-pixel-ratio: 2) { /* CSS for iPhone Retina */
+
+    
+}
+.container{
+	width: 120%;
+	padding: 15px 10%;
+    position:  relative;
+    margin-right: 290px;
+}   
+    
+.container{
+	padding-right: calc(190% - 30px);
+}
+main.row{
+	display: grid;
+	grid-template-columns: 9fr 3fr;
+	grid-column-gap: 80px;
+}
+.col header.title{
+	font-family: helvetica;
+	color: #11a372;
+	padding: 0px 0px 70px 30px;
+}
+.col .contents{
+	padding: 0px 30px;
+	border-left: 2px solid #bababa;
+}
+.col .contents .box{
+	position: relative;
+	padding: 20px;
+	border: 1px solid #eaeaea;
+	background-color: #ffffff;
+	cursor: pointer;
+	transition: all 0.8s;
+	margin-bottom: 20px;
+    border-radius: 20px;
+}
+.col .contents .box:hover{
+	box-shadow: 11px 5px 10px 2px #11a372;
+	border: 100px solid transparent;
+}
+.col .contents .box::before{
+	content:'';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	right: calc(100% + 22px);
+	top: 0;
+	background-color: #11a372;
+	border: 2px solid white;
+}
+.box h4{
+	position: relative;
+	color: #11a372;
+}
+.box h3{
+	font-size: 19px;
+	padding: 10px 10px 6px;
+	font-family: helvetica;
+	color: #444;
+}
+.box p{
+	line-height: 1.2;
+	color: #666;
+	font-size: 17px;
+}
+@media(max-width: 748px){
+	main.row{
+		grid-template-columns: 14fr;
+	}
+	.row .col:nth-child(2){
+		margin-top: 490px;
+	}
+}
+
+
+.profile { 
+    height: 410px;
+    width: 220px; 
+    float: left;  
+    margin-left:70%;
+    margin-top:-250px;
+    animation: image 30s  infinite ease-in-out ; /* The animation name, a type of animation the element is running*/
+    filter: drop-shadow(0 0 0.75rem #f1c27d);
+
+}
+
+
+
+    
+    
+ 
+  @keyframes image {
+    
+    0% {
+       
+      background-image: url('img/Avatar1.png');
+    }
+    20%{
+      
+      background-image: url('img/Avatar2.png');
+    }
+    50%{
+       
+        background-image: url('img/Avatar4.png');
+    }
+    80%{
+             
+            background-image: url('img/Avatar5.png');
+          
+        }
+    }
+
+    @media only screen and (max-width: 768px){
+        .Me{
+            font-size: 15px;
+            line-height: 1.5em;
+        }
+        .profile{
+           display:flexinline-block;
+           float: none;
+           margin-left: 210px;
+           margin-top:-300px;
+        }
+    
+        
+    } 
+
+    .typing{
+       width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 75%;
+        left: 150%;
+        transform: translate(-50%, -50%);
+        font-weight: 100%;
+        color: #fff;
+    }
+    .typing span{
+        color: #b30f27;
+    }
+    .typing{
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 190%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        font-weight: 150%;
+        color: whitesmoke;
+        font-size: 16px;
+        
+    }
+    @media only screen and (min-width:420px ) and ( max-device-width : 768px) { 
+        .typing{
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+        }
+    }  
+  
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+* {
+padding: 0px;
+margin: 0px;
+/* font-family: 'Gowun Dodum', sans-serif; */
+}
+
+body {
+background-color: rgb(0, 0, 0);
+}
+
+
+
+/* -------------------------------.main-page---------- */
+#contener {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+
+}
+
+#screenONE {
+    width: 350px;
+    height: auto;
+    background-color: black;
+    padding: 100px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#screenTWO {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:1000px) {
+
+    #screenONE {
+        display: none;
+    }
+
+}
+
+
+
+
+
+.myname {
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
+    font-family: monospace;
+
+}
+
+.myemail  {
+    font-size: 11px;
+    color: rgb(255, 255, 255);
+}
+
+/* -----------------------------project------------------- */
+
+.tagname {
+    color: rgb(255, 255, 255);
+    width: 96%;
+    font-size: 25px;
+    margin-top: 30px;
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+.project{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projectbox {
+    width: 350px;
+    height: 470px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+  
+   
+}
+
+.projectimgbox {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.projectimg{
+    width: 95%;
+    height: 95%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 1%;
+    border-radius: 10px;
+    box-shadow: 2px 10px 10px gray;
+    justify-content: center;
+    display: flex;
+    transition: transform .2s;
+    
+}
+
+
+.projectimg p{
+    margin-top: 20px;
+    color: rgba(169, 210, 245, 0.684);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+
+
+.projectabout {
+width: 100%;
+height: 30%;
+display: flex;
+flex-direction: column;
+justify-content:center;
+padding: 10px 0px;
+align-items: center;
+gap: 10px;
+
+
+}
+.projectnamebox, 
+.projectskillbox,
+.projectstextbox
+{
+    width:100%;
+    padding-left: 20px;
+    /* background-color: aqua; */
+    display: flex;
+    gap: 10px;
+}
+.projectsbtnbox
+{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding: 5px 0px;
+     /* background-color: aqua; */
+    gap: 5px;
+
+}
+
+
+.projectname {
+    font-size: 20px;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+
+}
+.projectskill{
+    display: flex;
+    color: black;
+    font-size: 12px;
+    padding: 7px 10px;
+    border-radius: 20px;
+    border: 1px solid grey;
+}
+.projecttext{
+    font-size: 13px;
+    color: gray;
+    padding: 10px;
+}
+.projectgitbtn{
+    width: 10%;
+    display: flex;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(128, 128, 128, 0.308);
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+   
+}
+.projectlive{
+width: 75%;
+background-color: rgb(44, 208, 98);
+border-radius: 10px;
+font-size: 15px;
+padding: 5px;
+font-family: 'Gowun Dodum', sans-serif;
+color: white;
+text-align: center;
+
+}
+
+/* ---------------------------------project hover--------- */
+
+.projectimg::before{
+    position: absolute;
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(128, 128, 128, 0.844);
+    transform: translateY(-100%);
+    transition: all .7s;
+    z-index: 10;
+}
+
+
+
+#pixelproject::before {
+    content: "pixel-website a dynamic wallpaper website crafted with HTML, CSS, and JavaScript. Dive into a vast collection of captivating wallpapers,  With seamless navigation and responsive design, ";
+   }
+   #faceproject::before {
+    content: "Face Recognition Attendance System built using Python, OpenCV, and face_recognition libraries. It leverages computer vision technology to automate attendance recording, offering increased accuracy and efficiency compared to traditional methods. ";
+   }
+   #cutmbolproject::before {
+    content: "Our team is committed to maintaining an updated and dynamic online presence. We are constantly working behind the scenes to improve the website's functionality, enhance its content, and incorporate feedback from our users ";
+   }
+   #studyproject::before {
+    content: "We have developed an innovative college Android app, which is divided into two parts: one for students and an Admin app for teachers to control the overall functionality. This app comprises four main features ";
+   }
+   #unvoproject::before {
+    content: "UNVO is a fun and exciting random chat app designed to connect people from all over the world in real-time conversations.  have interesting conversations, or simply pass the time, UNVO provides safe the user privacy ";
+   }
+   #rankingproject::before {
+    content: "Rank is a cutting-edge application designed to streamline the process of ranking students based on their academic performance. Whether it's for schools, colleges, or universities, MarkRank provides a comprehensive solution for educators and administrators to efficiently analyze and rank student marks ";
+   }
+   
+
+   .projectimg:hover::before {
+    transform: translateY(0%);
+   }
+
+
+
+
+
+
+
+
+.projectlive:hover{
+    color: black;
+}
+.projectskill:hover{
+    /* color: white; */
+    background-color:rgba(44, 208, 98) ;
+    border: 1px solid rgb(44, 208, 98);
+}
+.projectgitbtn:hover{
+ background-color: black;
+ color: white;
+}
+.projectimg:hover{
+    transform: scale(1.1);
+}
+
+
+@media (max-width:619px) {
+
+    .projectbox {
+        width: 80%;
+        height: 400px;
+    }
+
+    .myimg {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profilebox {
+        margin-top: 60px;
+    }
+
+    .myname {
+        font-size: 20px;
+    }
+
+}
+
+
+/*---------------------- clone--------------------------------- */
+
+
+/* --------------skilss----------------- */
+.skills {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.skilbox {
+    width: 90%;
+    height: 500px;
+    border-radius: 40px;
+    position: sticky;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+#webskil {
+    background-color: rgb(207, 187, 255);
+    top: 130px;
+  
+}
+
+#js {
+    background-color: rgb(235, 214, 62);
+    top: 150px;
+}
+
+#java {
+    background-color: rgb(219, 227, 249);
+    top: 170px;
+}
+
+
+#android {
+    background-color: rgb(55, 218, 114);
+    top: 190px;
+}
+
+.leftskill {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 50px;
+}
+
+.rightskill {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skillname {
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+
+   
+    
+}
+
+.skilltext {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    width: 80%;
+    margin-top: 15px;
+}
+
+
+
+
+
+@media (max-width:940px) {
+
+    .skilbox {
+    width: 90%;
+    height: 550px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    }
+
+    .skillname {
+        font-size: 20px;
+       
+    }
+
+    #webskil {
+        top: 90px;
+    }
+
+    .skilltext {
+        width: 100%;
+      
+    }
+    
+}
+
+@media (max-width:619px) {
+
+
+
+
+    #webskil img{
+        width: 100%;
+    }
+
+    #js img{
+        width: 200%; 
+    }
+    #java img{
+        width: 100%; 
+    }
+
+
+    #js{
+        top: 130px;
+    }
+}
+ 
