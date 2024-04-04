@@ -1038,7 +1038,7 @@ a {
         line-height: 1.5em;
     }
     .avatar{
-       display:flexinline-block;
+       display:none;
        float: none;
        margin-left: 150px;
        margin-right:20px;
