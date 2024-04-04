@@ -302,7 +302,7 @@ gap: 10px;
 }
 
 
-@media (max-width:619px) {
+@media only screen and (min-width:420px ) and ( max-device-width : 768px) {
 
     .projectbox {
         width: 80%;
@@ -413,7 +413,7 @@ gap: 10px;
 
 
 
-@media (max-width:940px) {
+@media only screen and (min-width:420px ) and ( max-device-width : 768px) {
 
     .skilbox {
         width: 90%;
@@ -442,7 +442,7 @@ gap: 10px;
     
 }
 
-@media (max-width:619px) {
+@media only screen and (min-width:420px ) and ( max-device-width : 768px) {
 
 
 
@@ -645,7 +645,7 @@ code{
 
 
 
-@media (max-width:940px) {
+@media only screen and (min-width:420px ) and ( max-device-width : 768px) {
     .workadd {
         flex-direction: column;
     }
@@ -763,7 +763,7 @@ code{
 
 
 
-@media (max-width:940px) and (min-width:600px) {
+@media only screen and (min-width:420px ) and ( max-device-width : 768px) {
     .footer {
         flex-direction: column;
         height: 500px;
@@ -1032,15 +1032,18 @@ a {
     animation: rotate 3s 3ms 2s 1s cubic-bezier(0.215, 0.610, 0.355, 1) cubic-bezier(0.895, 0.03, 0.685, 0.22);
     z-index: 999;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (min-width:420px ) and ( max-device-width : 768px){
     .Me{
         font-size: 15px;
         line-height: 1.5em;
     }
     .avatar{
-       display:none;
+       display:flexinline-block;
        float: none;
-               
+       margin-left: 150px;
+       margin-right:20px;
+    
+                
      }
      #backbtn{
          right: 10px;
@@ -1114,7 +1117,7 @@ main.row{
 	color: #666;
 	font-size: 17px;
 }
-@media(max-width: 748px){
+@media only screen and (min-width:420px ) and ( max-device-width : 768px){
 	main.row{
 		grid-template-columns: 14fr;
 	}
@@ -1160,8 +1163,7 @@ main.row{
           
         }
     }
-
-    @media only screen and (max-width: 768px){
+    @media only screen and (min-width:420px ) and ( max-device-width : 768px){
         .Me{
             font-size: 15px;
             line-height: 1.5em;
@@ -1209,447 +1211,3 @@ main.row{
         }
     }  
   
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
-
-* {
-padding: 0px;
-margin: 0px;
-/* font-family: 'Gowun Dodum', sans-serif; */
-}
-
-body {
-background-color: rgb(0, 0, 0);
-}
-
-
-
-/* -------------------------------.main-page---------- */
-#contener {
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-
-}
-
-#screenONE {
-    width: 350px;
-    height: auto;
-    background-color: black;
-    padding: 100px 0px 0px 0px;
-    display: flex;
-    justify-content: center;
-}
-
-#screenTWO {
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-@media (max-width:1000px) {
-
-    #screenONE {
-        display: none;
-    }
-
-}
-
-
-
-
-
-.myname {
-    font-size: 30px;
-    color: white;
-    font-weight: bolder;
-    font-family: monospace;
-
-}
-
-.myemail  {
-    font-size: 11px;
-    color: rgb(255, 255, 255);
-}
-
-/* -----------------------------project------------------- */
-
-.tagname {
-    color: rgb(255, 255, 255);
-    width: 96%;
-    font-size: 25px;
-    margin-top: 30px;
-    font-family: 'Gowun Dodum', sans-serif;
-}
-
-.project{
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.projectbox {
-    width: 350px;
-    height: 470px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    overflow: hidden;
-  
-   
-}
-
-.projectimgbox {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-}
-.projectimg{
-    width: 95%;
-    height: 95%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 1%;
-    border-radius: 10px;
-    box-shadow: 2px 10px 10px gray;
-    justify-content: center;
-    display: flex;
-    transition: transform .2s;
-    
-}
-
-
-.projectimg p{
-    margin-top: 20px;
-    color: rgba(169, 210, 245, 0.684);
-    font-family: 'Courier New', Courier, monospace;
-}
-
-
-
-
-
-
-.projectabout {
-width: 100%;
-height: 30%;
-display: flex;
-flex-direction: column;
-justify-content:center;
-padding: 10px 0px;
-align-items: center;
-gap: 10px;
-
-
-}
-.projectnamebox, 
-.projectskillbox,
-.projectstextbox
-{
-    width:100%;
-    padding-left: 20px;
-    /* background-color: aqua; */
-    display: flex;
-    gap: 10px;
-}
-.projectsbtnbox
-{
-    width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     padding: 5px 0px;
-     /* background-color: aqua; */
-    gap: 5px;
-
-}
-
-
-.projectname {
-    font-size: 20px;
-    font-weight: 900;
-    font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    color: black;
-
-}
-.projectskill{
-    display: flex;
-    color: black;
-    font-size: 12px;
-    padding: 7px 10px;
-    border-radius: 20px;
-    border: 1px solid grey;
-}
-.projecttext{
-    font-size: 13px;
-    color: gray;
-    padding: 10px;
-}
-.projectgitbtn{
-    width: 10%;
-    display: flex;
-    padding: 8px;
-    align-items: center;
-    justify-content: center;
-    background-color:rgba(128, 128, 128, 0.308);
-    border-radius: 15px;
-    color: rgb(0, 0, 0);
-   
-}
-.projectlive{
-width: 75%;
-background-color: rgb(44, 208, 98);
-border-radius: 10px;
-font-size: 15px;
-padding: 5px;
-font-family: 'Gowun Dodum', sans-serif;
-color: white;
-text-align: center;
-
-}
-
-/* ---------------------------------project hover--------- */
-
-.projectimg::before{
-    position: absolute;
-    color: white;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    box-sizing: border-box;
-    padding: 20px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color:rgba(128, 128, 128, 0.844);
-    transform: translateY(-100%);
-    transition: all .7s;
-    z-index: 10;
-}
-
-
-
-#pixelproject::before {
-    content: "pixel-website a dynamic wallpaper website crafted with HTML, CSS, and JavaScript. Dive into a vast collection of captivating wallpapers,  With seamless navigation and responsive design, ";
-   }
-   #faceproject::before {
-    content: "Face Recognition Attendance System built using Python, OpenCV, and face_recognition libraries. It leverages computer vision technology to automate attendance recording, offering increased accuracy and efficiency compared to traditional methods. ";
-   }
-   #cutmbolproject::before {
-    content: "Our team is committed to maintaining an updated and dynamic online presence. We are constantly working behind the scenes to improve the website's functionality, enhance its content, and incorporate feedback from our users ";
-   }
-   #studyproject::before {
-    content: "We have developed an innovative college Android app, which is divided into two parts: one for students and an Admin app for teachers to control the overall functionality. This app comprises four main features ";
-   }
-   #unvoproject::before {
-    content: "UNVO is a fun and exciting random chat app designed to connect people from all over the world in real-time conversations.  have interesting conversations, or simply pass the time, UNVO provides safe the user privacy ";
-   }
-   #rankingproject::before {
-    content: "Rank is a cutting-edge application designed to streamline the process of ranking students based on their academic performance. Whether it's for schools, colleges, or universities, MarkRank provides a comprehensive solution for educators and administrators to efficiently analyze and rank student marks ";
-   }
-   
-
-   .projectimg:hover::before {
-    transform: translateY(0%);
-   }
-
-
-
-
-
-
-
-
-.projectlive:hover{
-    color: black;
-}
-.projectskill:hover{
-    /* color: white; */
-    background-color:rgba(44, 208, 98) ;
-    border: 1px solid rgb(44, 208, 98);
-}
-.projectgitbtn:hover{
- background-color: black;
- color: white;
-}
-.projectimg:hover{
-    transform: scale(1.1);
-}
-
-
-@media (max-width:619px) {
-
-    .projectbox {
-        width: 80%;
-        height: 400px;
-    }
-
-    .myimg {
-        width: 100px;
-        height: 100px;
-    }
-
-    .profilebox {
-        margin-top: 60px;
-    }
-
-    .myname {
-        font-size: 20px;
-    }
-
-}
-
-
-/*---------------------- clone--------------------------------- */
-
-
-/* --------------skilss----------------- */
-.skills {
-    width: 100%;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-}
-
-
-.skilbox {
-    width: 90%;
-    height: 500px;
-    border-radius: 40px;
-    position: sticky;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-
-
-#webskil {
-    background-color: rgb(207, 187, 255);
-    top: 130px;
-  
-}
-
-#js {
-    background-color: rgb(235, 214, 62);
-    top: 150px;
-}
-
-#java {
-    background-color: rgb(219, 227, 249);
-    top: 170px;
-}
-
-
-#android {
-    background-color: rgb(55, 218, 114);
-    top: 190px;
-}
-
-.leftskill {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0px 50px;
-}
-
-.rightskill {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.skillname {
-    font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-
-   
-    
-}
-
-.skilltext {
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    width: 80%;
-    margin-top: 15px;
-}
-
-
-
-
-
-@media (max-width:940px) {
-
-    .skilbox {
-    width: 90%;
-    height: 550px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    }
-
-    .skillname {
-        font-size: 20px;
-       
-    }
-
-    #webskil {
-        top: 90px;
-    }
-
-    .skilltext {
-        width: 100%;
-      
-    }
-    
-}
-
-@media (max-width:619px) {
-
-
-
-
-    #webskil img{
-        width: 100%;
-    }
-
-    #js img{
-        width: 200%; 
-    }
-    #java img{
-        width: 100%; 
-    }
-
-
-    #js{
-        top: 130px;
-    }
-}
- 
